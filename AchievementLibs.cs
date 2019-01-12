@@ -120,6 +120,7 @@ namespace AchievementLibs
                     achievement.description = args[3] as string;
                     achievement.TexturePath = args[4] as string;
                     achievement.condition = args[5] as Func<bool>;
+                    achievement.TexturePath2 = args[6] as string;
                     achievement.itemReward = new int[0];
                     achievement.AutoLoad(args[1] as Mod);
                     AchievementManager.GetInstance().AddAchievement(achievement);
